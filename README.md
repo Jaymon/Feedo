@@ -23,12 +23,12 @@ if($is_valid_feed)
 
   // set the feed attributes...
   $feedo->setTitle("the feed title");
-  $feedo->setDesc("the feed description);
+  $feedo->setDesc("the feed description");
   $feedo->setLink("http://site.com");
   $feedo->setId("the feed id");
   $feedo->setFeedLink("http://the.permalink.url.com/for/feed");
 
-  $timezone = "UTC"
+  $timezone = "UTC";
 
   // we need to get the stuff we found into the right format...
   if(!empty($plans))
@@ -46,6 +46,7 @@ if($is_valid_feed)
       $feedo_item->setStart($plan->getWhenStart());
       $feedo_item->setStop($plan->getWhenStop());
 
+      # we build an item description array of lines that we will \n join at the end
       $item_desc = array();
       if($plan->hasDescription())
       {
