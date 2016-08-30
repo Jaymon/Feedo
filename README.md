@@ -5,7 +5,7 @@
 
 ## What is Feedo?
 
-You can use it to map random data to feed standardized feed types that you could then use to generate different feed types.
+You can use it to map random data to a standardized generic feed item that you could then use to generate different feed types like RSS or iCal.
 
 
 ### How do I use it?
